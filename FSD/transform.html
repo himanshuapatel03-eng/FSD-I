@@ -1,0 +1,16 @@
+<!-- construct two box having200px 200px a while hovering on it boxA should travel to bottom right about 100px
+also rotate by 90deg and increment its width is about 50% of actual width -->
+<!-- while hovering a box2 it will rotate 45deg nd skewd 30deg or vartical axis  -->
+<head>
+    <style>
+        div{height: 200px;width: 200px;background-color: aqua;margin: 20px;}
+        .a:hover{transform: translate(100px,100px) rotate(90deg) scale(1.5,1);}
+        .b:hover{transform: rotate(45deg) skewY(30deg);}
+        .c:hover{transform: scaleX(-1);width:300px;height: 300px;}
+    </style>
+</head>
+<body>
+    <div class="a">HEllo</div>
+    <div class="b">BANSI</div>
+    <img src="news.jpeg" class="c">
+</body>
