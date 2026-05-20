@@ -1,0 +1,18 @@
+<head>
+    <script>
+        function conf(){
+            let result=confirm('Do you agree?')
+            if (result==true){
+                document.writeln('user agree')
+                return true
+            }
+            else{
+                document.writeln('user disagree')
+                return false
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="confbox" onclick="conf()">
+</body>

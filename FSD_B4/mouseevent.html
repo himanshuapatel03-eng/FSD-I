@@ -1,0 +1,21 @@
+<div onclick="this.innerHTML='HELLO'">HI</div>
+<div onmouseover="this.style.color='tomato'">I am on mouseover</div>
+<div onmouseout="this.style.backgroundColor='cyan'">changed on mouse out</div>
+<div onmousedown="this.style.color='blue'">on mouse key press</div>
+<div onmouseup="this.style.color='pink'">on mouse key release</div>
+<!-- 
+create 100x100 div box having a defalut text perform on mouse down on mouse up event using fun by clicking at time of mouse down 
+background color is yellow and text is click pressed at the time of releasing key bg pink and text will be mouse key released -->
+
+<div onmouseover='fun(this)' onmouseout='funz(this)' style="height: 100px; width: 100px;background-color: tomato;">
+    <script>
+        function fun(e){
+            e.innerHTML='click pressed'
+            e.style.backgroundColor='cyan'
+        }
+        function funz(e){
+            e.innerHTML='click released'
+            e.style.backgroundColor='pink'
+        }
+    </script>
+</div>

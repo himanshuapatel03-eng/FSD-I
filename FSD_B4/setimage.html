@@ -1,0 +1,24 @@
+<img id="a" href="#" src="image1.jpeg" alt="not found">
+<script>
+       let i=0
+    function f(){
+        document.getElementById("a").setAttribute("src","santa.jpeg")
+     
+        if (i%2==0){
+            document.getElementById("a").setAttribute("src","santa.jpeg")
+            i+=1
+        }
+        else{
+            i+=1
+            document.getElementById("a").setAttribute("src","image1.jpeg")
+        }
+    }
+    function f1(){
+        document.getElementById("a").setAttribute("src","santa.jpeg")
+         document.getElementById("a").setAttribute("height","500px")
+    }
+</script>
+<body>
+    <input type="button" onclick="f()" value="change">
+    <input type="button" onclick="f1()" value="large">
+</body>

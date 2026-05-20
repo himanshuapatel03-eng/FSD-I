@@ -1,0 +1,26 @@
+<head>
+    <script>
+        // const arr1=[3,2,1]
+        // const arr2=[4,5]
+        // const arr=[arr1,arr2]
+        // console.log(arr)
+        // const frr = [...arr1,...arr2]
+        // console.log(frr)
+        // console.log(frr.sort())
+        // console.log(...frr)
+        // console.log(Math.min(...frr))
+        // console.log(Math.min(frr))
+
+        function fun(bg,tx,size="20px",fs="italic"){
+            i=document.getElementById("a1")
+            i.style.color=tx;
+            i.style.backgroundColor=bg;
+            i.style.fontSize=size;
+            i.style.fontStyle=fs;
+        }
+    </script>
+</head>
+<body>
+    <div id="a1">HELLO</div>
+    <input type="submit" onclick="fun('tomato','cyan')" value="click me">
+</body>

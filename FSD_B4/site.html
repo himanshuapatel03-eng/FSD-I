@@ -1,0 +1,30 @@
+write a JS to handle following mouse event
+1. if mouse is over heading it should turn yellow
+it mouse goes out then it should turn black
+2. if find time button is click then show date and time information
+3. if button name red is click then bg is red and button named green is click then background color should be green
+<body id="bgd">
+<h1 onmouseover="fun(this)" onmouseout="funz(this)">HELLO</h1>
+<input type="submit" value="find time" onclick="fun3(this)">
+<p id="demo"></p>
+<input type="submit" value="red" onclick="fun4(this)">
+<input type="submit" value="green" onclick="fun5(this)">
+<script>
+    function fun(e){
+        e.style.color='yellow'
+    }
+    function funz(e){
+        e.style.color='black'
+    }
+    function fun3(e){
+        d=new Date()
+        document.getElementById("demo").innerHTML=d
+    }
+    function fun4(e){
+        id=document.getElementById("bgd")
+        id.style.backgroundColor='red'
+    }
+  const  fun5=()=>{id=document.getElementById("bgd") ;
+    id.style.backgroundColor="green"}
+</script>
+</body>

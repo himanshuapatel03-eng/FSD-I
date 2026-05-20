@@ -1,0 +1,34 @@
+ <!-- <p id="a">HEllO</p>
+<script>
+    document.getElementById('a').innerText="<b>How Are You? </b>"
+</script>   -->
+
+<!-- <p class="b">hello1</p>
+<h1 class="b">hello2</h1>
+<script>
+    function f(){
+    let x=document.getElementsByTagName('h1')
+    for(let i=0;i<x.length;i++){
+    // x[0].innerHTML="Loop require to change all class innerHtml"}
+    x[i].innerHTML="i am applied on all"
+    }
+    }
+</script>
+<body>
+    <input type="button" onclick="f()" value="change">
+</body> -->
+
+//Task
+<p id="a">hello</p>
+<script>
+    function f(){
+        document.getElementById('a').style.textTransform="uppercase"
+    }
+     function f1(){
+        document.getElementById('a').style.textTransform="lowercase"
+    }
+</script>
+<body>
+    <input type="button" onclick="f()" value="upper">
+    <input type="button" onclick="f1()" value="lower">
+</body>

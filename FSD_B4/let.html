@@ -1,0 +1,63 @@
+<head>
+    <script>
+        // function f(){
+        //     if(true){
+        //         let a=10
+        //     }
+        //     console.log(a)
+        // }
+        // f()
+        for(let x=1;x<=5;x++){
+            console.log(x)
+        }
+
+        var emp=["abc","pqr","xyz"]
+        for(let i=0;i<emp.length;i++){
+            document.write(emp[i]+"<br>")
+        }
+
+        var mul=[1,2,3,4,5]
+        for(let i=0;i<mul.length;i++){
+            m=mul[i]*2
+            document.write("multiplication with 2 is ",m+"<br>")
+        }
+
+        let fruits=["a","b","c"]
+        for(let f of fruits){
+            console.log(f)
+        }
+
+        let user={name:"fgd",age:20,city:"abd"}
+        for(let key in user){
+            console.log(key+":"+user[key])
+        }
+
+         let fruit=["a","b","c"]
+        for(let f in fruit){
+            console.log(f)
+            console.log(fruit[f])
+        }
+
+        let i=5
+        for(let i=0;i<2;i++){
+            console.log(i)
+        }
+        console.log(i)
+
+        let nums=[1,2,3,4]
+        let s=nums.map(num=>num*num)
+        console.log(s)
+
+        let ages=[18,25,36,45,5]
+        let d=ages.filter(age=>age>18)
+        console.log(d)
+
+        let names=["a","b","c"]
+        names.forEach(name=>{console.log("Hello"+" "+name)})
+
+        let users=[{id:1,name:"a"},{id:2,name:"b"}]
+        let u=users.find(u=>u.id===2)
+        console.log(u)
+        console.log(users[1].name)
+    </script>
+</head>

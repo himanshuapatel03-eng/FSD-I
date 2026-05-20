@@ -1,0 +1,19 @@
+<input type="text" id="a">
+<input type="submit" onclick="fun()">
+<script>
+    function fun(){
+        // pat=/\d/
+        // pat=/bo*/
+        // pat=/\d/,\D,\w,\W,^A,/bo*/,/t$/,?
+        // pat=/[bansi]/
+        pat=/^\d{3,8}$/
+        u=document.getElementById('a').value
+        if(pat.test(u)){
+            alert('Perfect')
+        }
+        else{
+            alert('not allowed')
+        }
+    }
+</script>
+

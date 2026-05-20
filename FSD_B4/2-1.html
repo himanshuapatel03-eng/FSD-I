@@ -1,0 +1,20 @@
+<!-- a js  input one input field and empty button if field is empty alert will pop-pop with text enter something otherwise it will show field value -->
+<body>
+     <form name="f1" onsubmit="fun()">
+    Enter Name:<input type="text" name="fname" >
+    <input type="submit" value="submit">
+ </form>
+ <script>
+    function fun(){
+    obj1=document.f1.fname.value
+    if(isNaN(obj1)){
+        alert(`enter only number`)
+    }
+    else if(obj1.length!='4'){
+        alert(`enter 4 digit`)
+    }
+    else{
+        document.writeln(obj1)
+    }}
+ </script>
+</body>

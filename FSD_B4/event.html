@@ -1,0 +1,84 @@
+<!-- event.target
+event.type
+event.key
+event.button
+event.preventDefault() -->
+<!-- <head>
+<select onchange="fun(event)">
+    <option value="red">Red</option>
+    <option value="green">green</option>
+</select>
+<script>
+    function fun(e){
+        alert(e.target.value,e.target.tagName)
+        // red/green aave
+        //only tagName ma select aavse
+        //alert(e.type)  =>change
+    }
+</script>
+</head> -->
+
+<!-- 
+ <body onkeydown="kc(event)">
+    <script>
+        function kc(e){
+            if(e.key=='a' || e.key=='e' || e.key=='i'||e.key=='o'||e.key=='u'){
+            alert("key pressed is vowels "+e.key)} 
+            //e.keyCode
+            else{
+                alert(e.key +" is not vowel")
+            }
+        }
+    </script>
+</body>   -->
+
+ <!-- <button onclick="fun(event)">Hi</button>
+<script>
+    function fun(e){
+        alert(e.button)
+    }
+</script>  -->
+
+<!-- <form onsubmit="stop(event)">
+    <input type="submit" value="submit">
+</form>
+<script>
+    function stop(e){
+        e.preventDefault()
+        alert("form submission stop")
+    }
+</script> -->
+
+<!-- <div style="width: 100px; height: 100px; background-color: cyan;"onmousedown='fun(event)'></div>
+<script>
+    function fun(e){
+        val=e.button
+        switch(val){
+            case 0:
+                alert('left click')
+                break
+            case 1:
+                  alert('middle click')
+                break
+            case 2:
+                  alert('right click')
+                break
+        }
+    }
+</script> -->
+
+
+<form>
+    <input type="text"  id="a">
+</form>
+<script>
+        let input=document.querySelector('#a')
+        input.addEventListener('keydown',e=>{
+            if(isNaN(e.key)){
+                e.preventDefault()
+            }
+        })
+    
+</script>
+
+

@@ -1,0 +1,55 @@
+<!-- design a login form with foll validation in a pwd field min length of pass must be of 8 letters and it must have some special characters -->
+ <!-- <input type="text" id="a">
+ <input type="submit" onclick="fun()">
+ <script>
+    function fun(){
+        pat=/\W/
+        u=document.getElementById('a').value
+        if(u.length<8){
+            alert('pwd must be 8 digit')
+        }
+        else if(pat.test(u)==0){
+            alert('must contain special char')
+        }
+        else{
+            alert('perfect')
+        }
+    }
+    
+ </script> -->
+
+ wtite a JS to validate username and pass pass length must be 6-12 char username should not start with _,@,any number also check both fields must not be blank
+ <form>
+    userName: <input type="text"  id="a"><br><br>
+    Pass: <input type="password"  id="b"><br><br>
+     <input type="submit" onclick="fun()">
+     <!-- <p id="c"></p> -->
+ </form>
+ <script>
+    function fun(){
+        pat=/^_|^@|^\d/
+        u=document.getElementById('a').value
+        v=document.getElementById('b').value
+        if(v.length==0 || u.length==0){
+            document.getElementById('a').innerHTML("Cant blank")
+            document.getElementById('a').innerHTML.style.color='red'
+            // alert('cant blank')
+        }
+        else if(v.length<6 ||v.length>12){
+            document.getElementById('b').innerHTML("must be 6-12")
+            document.getElementById('b').innerHTML.style.color='red'
+            // alert('must be 6 to 12')
+        }
+        else{
+            document.getElementById('b').innerHTML("pwd strong")
+            document.getElementById('b').innerHTML.style.color='green'
+            // alert('pwd strong')
+        }
+            if(pat.test(u)){
+                alert('Enter valid userName')
+            }
+        }
+ </script>
+
+ <!-- for email
+ pat=/^\w+@\w+(\.\w{2,3})+$/ -->

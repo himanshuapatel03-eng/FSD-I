@@ -1,0 +1,66 @@
+A web page contains a cyan div of size 100 × 100 and a button labeled “Zoom In”.
+
+On clicking the button, the div size should change to 200 × 200 and the button text should change to “Zoom Out”.
+
+On clicking again, the div should return to 100 × 100 and the button text should revert to “Zoom In”. 
+
+<!-- <div style="width: 100px; height: 100px; background-color: cyan;"onmousedown='fun(event)'></div>
+<button type="button" value="zoom in"></button>
+<button type="button" onclick="fun()" value="zoomout"></button>
+<script>
+    function fun(){
+        <div style="width: 200px; height: 200px; background-color: cyan;"onmousedown='fun(event)'></div>
+    }
+</script>
+<button type="button" onclick="fun1()" value="zoomin"></button>
+<script>
+    function fun(){
+        <div style="width: 100px; height: 100px; background-color: cyan;"onmousedown='fun(event)'></div>
+    }
+</script> -->
+
+
+100%
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Button Toggle Zoom</title>
+
+<style>
+  #box{
+    width:100px;
+    height:100px;
+    background:cyan;
+    margin-bottom:12px;
+    transition:all 0.3s ease;
+  }
+</style>
+
+<script>
+function toggleBox(){
+  const box = document.getElementById("box");
+  const btn = document.getElementById("btn");
+
+  if(box.style.width === "200px"){
+    // Reset
+    box.style.width = "100px";
+    box.style.height = "100px";
+    btn.innerHTML = "Zoom In";
+  }else{
+    // Zoom
+    box.style.width = "200px";
+    box.style.height = "200px";
+    btn.innerHTML = "Zoom Out";
+  }
+}
+</script>
+</head>
+
+<body>
+
+<div id="box"></div>
+<button id="btn" onclick="toggleBox()">Zoom In</button>
+
+</body>
+</html>
